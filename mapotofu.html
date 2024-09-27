@@ -1,61 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-    * {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-body {
-  font-size: 1.2em;
-}
-
-</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kung Pao Chicken</title>
+    <title>Chongqing Noodles</title>
+    <style>
+        body {
+            font-family: "KaiTi", "STKaiti", serif;
+            background-image: url('https://example.com/ancient-pattern-background.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border: 2px solid #d4a373;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #b85c38;
+            font-size: 36px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #b85c38;
+            display: inline-block;
+            padding: 0 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.8;
+            text-align: left;
+        }
+        h2 {
+            color: #b85c38;
+            font-size: 28px;
+            border-bottom: 2px solid #d4a373;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        ul, ol {
+            text-align: left;
+            margin: 20px;
+            padding-left: 40px;
+        }
+        ul li, ol li {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .images img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #d4a373;
+        }
+        .quote {
+            font-size: 20px;
+            font-style: italic;
+            margin: 30px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-left: 5px solid #b85c38;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <ol></ol>
     <nav>
         <a href="Website Assignment.html">Back</a>
     </nav>
-    <h1 align = "center"> Mapo Tofu</h1>
+<div class="container">
+    <div class="images">
+        <img src="https://omnivorescookbook.com/wp-content/uploads/2022/05/220510_Mapo-Tofu_550.jpg"></img>
+        <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/08ba3973-23d4-4d12-bb07-ee8cdbf66ea5/Derivates/b01a9b88-6fd3-40ca-bec0-c1d05e314133.jpg"></img>
+        <img src="https://img.taste.com.au/Qgis1Psl/taste/2022/07/mapo-tofu-recipe-180109-2.png"></img>
+    </div>
+
+    <h1>Mapo Tofu</h1>
+    
+
     <p><strong>Mapo Tofu</strong> is a <em>signature dish of Sichuan cuisine</em>, 
-        renowned for its <i>complex layers of flavor</i> and <i>fiery heat</i>. The dish features soft, 
-        silky tofu submerged in a spicy, savory sauce that bursts with umami. The sauce is typically 
-        made with fermented black beans, chili paste, garlic, and Sichuan peppercorns, which add a unique 
-        numbing sensation to the spice.
-    </p>
-    <p>
-        Traditionally, minced pork is added, giving the dish a <i>hearty texture</i> and <i>deep flavor</i>. 
-        The rich sauce coats each tofu piece perfectly, delivering a combination of heat, 
-        savory richness, and subtle sweetness. Mapo Tofu is a comforting, flavorful dish that 
-        embodies the bold, spicy nature of Sichuan cooking.
+      renowned for its <i>complex layers of flavor</i> and <i>fiery heat</i>. The dish features soft, 
+      silky tofu submerged in a spicy, savory sauce that bursts with umami. The sauce is typically 
+      made with fermented black beans, chili paste, garlic, and Sichuan peppercorns, which add a 
+      unique numbing sensation to the spice.</p>
+    
+    <p>Traditionally, minced pork is added, giving the dish a <i>hearty texture</i> 
+      and <i>deep flavor</i>. The rich sauce coats each tofu piece perfectly, delivering a 
+      combination of heat, savory richness, and subtle sweetness. Mapo Tofu is a comforting, 
+      flavorful dish that embodies the bold, spicy nature of Sichuan cooking.
     </p>
 
-      <div class="row">
-        <div class="column">
-          <img src="https://omnivorescookbook.com/wp-content/uploads/2022/05/220510_Mapo-Tofu_550.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/08ba3973-23d4-4d12-bb07-ee8cdbf66ea5/Derivates/b01a9b88-6fd3-40ca-bec0-c1d05e314133.jpg"  style="width:100%">
-        </div>
-        <div class="column">
-            <img src= "https://img.taste.com.au/Qgis1Psl/taste/2022/07/mapo-tofu-recipe-180109-2.png" style="width: 100%">
-        </div>
-      </div>
+</div>
+
 </body>
+</html>
