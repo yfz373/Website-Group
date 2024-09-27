@@ -2,86 +2,149 @@
 <html lang="en">
 <head>
     <style>
-        header, footer {
-            background-color: red;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(133, 84, 84);
             color: white;
             text-align: center;
             padding: 1em 0;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            padding: 0.5em 0;
+            color: white;
+        }
+        header h4, header h3 {
+            margin: 0;
+            padding: 0;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
         main {
             padding: 25px;
+            background-color: white;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         .content {
             max-width: 900px;
             margin: auto;
         }
+        h1 {
+            color: rgb(133, 84, 84);
+        }
         p {
-        font-size: 20px;}
-
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        ol li {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        nav a {
+            color: rgb(133, 84, 84);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: rgb(133, 84, 84);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>四川园林 (Sichuan Garden)</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="/mnt/data/file-Mddl9feHISKKKCsEK6ixhJOS">
 </head>
 <body>
     <header>
-        <h1 align ="center">四川园林  (Sichuan Garden)</h1>
-        <h4 align = 'center'>FX Sudirman Jl. Jenderal Sudirman No.1 Lantai 2</h4> 
-        <h3 align = 'center'>WA: 083652784524</h3>
-        <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> <br>
+        <h1>四川园林 (Sichuan Garden)</h1> 
+        <img src="微信图片_20240927151501.jpg" alt="Sichuan Garden Logo">
+        <h4>FX Sudirman Jl. Jenderal Sudirman No.1 Lantai 2</h4> 
+        <h3>WA: 083652784524</h3>
+        <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> | 
         <a href="https://www.facebook.com/FX_sgc/"><strong>FB: FX_SGC</strong></a>
     </header>
 
-    <h1>Sichuan Cusines</h1>
-    <p>Sichuan cuisine, or Szechuan cuisine and Chuan cuisine, is one of the eight Chinese cuisines popular in Sichuan and Chongqing area, 
-        even globally and it has the largest market share in China. Sichuan cuisine dishes are featured with hot, spicy and fish-flavor taste, 
-        colorful appearance, abundant using of seasonings especially pepper and prickly ashes and various cooking methods.</p>
-    <h1>About Sichuan Garden</h1>
-    <p>The atmosphere at <em>Sichuan Garden</em> is <strong>vibrant</strong> and welcoming, 
-        with traditional Chinese décor enhancing the dining experience.<br> Specializing in 
-        <i>authentic Sichuan cuisine</i>, the restaurant offers a wide range of spicy and 
-        flavorful dishes that are sure to excite your taste buds.</p>
+    <main>
+        <h1>Sichuan Cuisines</h1>
+        <p>Sichuan cuisine, or Szechuan cuisine and Chuan cuisine, is one of the eight Chinese cuisines popular in Sichuan and Chongqing area, 
+            even globally and it has the largest market share in China. Sichuan cuisine dishes are featured with hot, spicy and fish-flavor taste, 
+            colorful appearance, abundant using of seasonings especially pepper and prickly ashes and various cooking methods.</p>
+        
+        <h1>About Sichuan Garden</h1>
+        <p>The atmosphere at <em>Sichuan Garden</em> is <strong>vibrant</strong> and welcoming, 
+            with traditional Chinese décor enhancing the dining experience.<br> Specializing in 
+            <i>authentic Sichuan cuisine</i>, the restaurant offers a wide range of spicy and 
+            flavorful dishes that are sure to excite your taste buds.</p>
 
-    <h2>Main Dishes</h2>
-    <nav>
-    <ol type="i"></ol>
-        <li>Kung Pao Chicken (宫保鸡丁)</li>
-        <li>Sichuan Dry Fried Green Beans (干煸四季豆)</li>
-        <li>Kung Pao Shrimp (宫爆虾球)</li>
-        <li>Authentic Mapo Tofu (麻婆豆腐)</li>
-        <li>Chongqing Noodles (重庆小面)</li>
-        <li>Yu Xiang Eggplant (鱼香茄子)</li>
-        <li>Sichuan Boiled Fish (水煮鱼)</li>
-        <li>Dan Dan Noodles (担担面)</li>
-    </ol>
-    <ol></ol>
-    <h2>Popular Dishes</h2>
+       <h2>Popular Dishes</h2>
         <nav>
-            <nav style="font-size: 19px;">
+            <nav style="font-size: 19px;">  
 
             <a href="kungpao.html">Kung Pao Chicken</a> |
-            <a href="mapotofu.html">Authentic Mapo Tofu </a> |
-            <a href="草稿.html">Chongqing Noodles</a> |
-          </nav>
-    </ol>
+            <a href="mapotofu.html">Authentic Mapo Tofu</a> |
+            <a href="noodles.html">Chongqing Noodles</a>
+        </nav> 
+        
+        <h2>Main Dishes</h2>
+        <ol>
+            <li>Kung Pao Chicken (宫保鸡丁)</li>
+            <li>Sichuan Dry Fried Green Beans (干煸四季豆)</li>
+            <li>Kung Pao Shrimp (宫爆虾球)</li>
+            <li>Authentic Mapo Tofu (麻婆豆腐)</li>
+            <li>Chongqing Noodles (重庆小面)</li>
+            <li>Yu Xiang Eggplant (鱼香茄子)</li>
+            <li>Sichuan Boiled Fish (水煮鱼)</li>
+            <li>Dan Dan Noodles (担担面)</li>
+        </ol>
 
-    <h2>Appetizers & Drinks</h2>
-    <ol type="i"></ol>
-        <li>Home-Style Fried Rice (街坊家常炒饭)</li>
-        <li>Street Corner Potato Strips (街角狼牙士豆)</li>
-        <li>School Yard Hot Pot Noodles (校园火锅粉)</li>
-        <li>Wontons in Chicken Broth (鸡汤抄手)</li>
-        <li>Wontons in Chili Oil (红油抄手)</li>
-        <li>Impressive Dumplings (锦城水饺)</li>
-        <li>Tea (茶)</li>
-        <li>Milk Tea (奶茶)</li>
-        <li>Winter Melon Tea (冬瓜茶)</li>
-        <li>Soy Milk (豆浆)</li>
-        <li>Walnut Milk (核桃奶)</li>
-        <li>Coconut Milk (椰奶)</li>
-        <li>Sour Plum Drink (酸梅汤)</li>
-        <li>Mineral Water (矿泉水)</li>
-    </ol>
+        
+
+        <h2>Appetizers & Drinks</h2>
+        <ol>
+            <li>Home-Style Fried Rice (街坊家常炒饭)</li>
+            <li>Street Corner Potato Strips (街角狼牙士豆)</li>
+            <li>School Yard Hot Pot Noodles (校园火锅粉)</li>
+            <li>Wontons in Chicken Broth (鸡汤抄手)</li>
+            <li>Wontons in Chili Oil (红油抄手)</li>
+            <li>Impressive Dumplings (锦城水饺)</li>
+            <li>Tea (茶)</li>
+            <li>Milk Tea (奶茶)</li>
+            <li>Winter Melon Tea (冬瓜茶)</li>
+            <li>Soy Milk (豆浆)</li>
+            <li>Walnut Milk (核桃奶)</li>
+            <li>Coconut Milk (椰奶)</li>
+            <li>Sour Plum Drink (酸梅汤)</li>
+            <li>Mineral Water (矿泉水)</li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>© 2024 Sichuan Garden. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

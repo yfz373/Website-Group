@@ -22,21 +22,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>四川园林 (Sichuan Garden)</title>
+    <link rel="icon" type="image/x-icon" href="">
 </head>
 <body>
     <header>
         <h1 align ="center">四川园林  (Sichuan Garden)</h1>
+        <h4 align = 'center'>FX Sudirman Jl. Jenderal Sudirman No.1 Lantai 2</h4> 
+        <h3 align = 'center'>WA: 083652784524</h3>
+        <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> <br>
+        <a href="https://www.facebook.com/FX_sgc/"><strong>FB: FX_SGC</strong></a>
     </header>
 
     <h1>Sichuan Cusines</h1>
     <p>Sichuan cuisine, or Szechuan cuisine and Chuan cuisine, is one of the eight Chinese cuisines popular in Sichuan and Chongqing area, 
         even globally and it has the largest market share in China. Sichuan cuisine dishes are featured with hot, spicy and fish-flavor taste, 
         colorful appearance, abundant using of seasonings especially pepper and prickly ashes and various cooking methods.</p>
-    
-    <h1>Main Dishes</h2>
+    <h1>About Sichuan Garden</h1>
+    <p>The atmosphere at <em>Sichuan Garden</em> is <strong>vibrant</strong> and welcoming, 
+        with traditional Chinese décor enhancing the dining experience.<br> Specializing in 
+        <i>authentic Sichuan cuisine</i>, the restaurant offers a wide range of spicy and 
+        flavorful dishes that are sure to excite your taste buds.</p>
+
+    <h2>Main Dishes</h2>
     <nav>
     <ol type="i"></ol>
-        <li><a href="kungpao.html"> Kung Pao Chicken (宫保鸡丁)</a></li>
+        <li>Kung Pao Chicken (宫保鸡丁)</li>
         <li>Sichuan Dry Fried Green Beans (干煸四季豆)</li>
         <li>Kung Pao Shrimp (宫爆虾球)</li>
         <li>Authentic Mapo Tofu (麻婆豆腐)</li>
@@ -45,7 +55,16 @@
         <li>Sichuan Boiled Fish (水煮鱼)</li>
         <li>Dan Dan Noodles (担担面)</li>
     </ol>
-    </nav>
+    <ol></ol>
+    <h2>Popular Dishes</h2>
+        <nav>
+            <nav style="font-size: 19px;">
+
+            <a href="kungpao.html">Kung Pao Chicken</a> |
+            <a href="mapotofu.html">Authentic Mapo Tofu </a> |
+            <a href="草稿.html">Chongqing Noodles</a> |
+          </nav>
+    </ol>
 
     <h2>Appetizers & Drinks</h2>
     <ol type="i"></ol>
@@ -66,3 +85,5 @@
     </ol>
 </body>
 </html>
+file_path = '/mnt/data/file-Mddl9feHISKKKCsEK6ixhJOS'
+file_path
