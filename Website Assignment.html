@@ -12,6 +12,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
+            scroll-behavior: smooth; /* Smooth scrolling for internal links */
         }
         header {
             background-color: rgba(133, 84, 84, 0.9);
@@ -24,10 +25,10 @@
         header h1 {
             font-size: 3em;
             margin: 0;
+            transition: text-shadow 0.3s ease; /* Smooth transition for shadow */
         }
-        header h4, header h3 {
-            margin: 0;
-            font-size: 1.2em;
+        header h1:hover {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
         }
         header img {
             width: 130px;
@@ -36,6 +37,10 @@
             top: 20px;
             left: 20px;
             border-radius: 50%;
+            transition: transform 0.3s ease; /* Added zoom effect */
+        }
+        header img:hover {
+            transform: scale(1.1); /* Scale up on hover */
         }
         main {
             padding: 40px;
@@ -44,6 +49,8 @@
             margin: 20px auto;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
+            opacity: 0; /* Start hidden for fade-in */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
         }
         .content {
             max-width: 900px;
@@ -59,6 +66,10 @@
             margin-bottom: 10px;
             border-bottom: 2px solid #a34646;
             display: inline-block;
+            transition: transform 0.3s ease; /* Transition for heading */
+        }
+        h2:hover {
+            transform: translateY(-3px); /* Lift effect on hover */
         }
         p {
             font-size: 1.2em;
@@ -75,17 +86,22 @@
             margin: 20px 0;
         }
         nav a {
-    color: #a34646;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 15px 20px;
-    background-color: rgba(133, 84, 84, 0.1);
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 1.25em; /* Increased font size */
-}
-nav a:hover {
-    background-color: rgba(133, 84, 84, 0.3);
+            color: #a34646;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 20px;
+            background-color: rgba(133, 84, 84, 0.1);
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, margin-left 0.3s; /* Added margin for slide effect */
+            font-size: 1.25em; /* Increased font size */
+        }
+        nav a:hover {
+            background-color: rgba(133, 84, 84, 0.3);
+            transform: translateX(5px); /* Slide to the right on hover */
+            margin-left: 2px; /* Slightly shift left to create space */
+        }
+        nav a:active {
+            transform: rotate(3deg); /* Slight rotation on click */
         }
         footer {
             background-color: rgba(133, 84, 84, 0.9);
@@ -98,6 +114,17 @@ nav a:hover {
         footer p {
             margin: 0;
         }
+    
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5em;
@@ -110,6 +137,7 @@ nav a:hover {
             }
         }
     </style>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>四川园林 (Sichuan Garden)</title>

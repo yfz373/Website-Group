@@ -7,21 +7,24 @@
     <style>
         body {
             font-family: "KaiTi", "STKaiti", serif;
-            background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg');
+            background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg'); /* Updated background image */
             background-size: cover;
             background-attachment: fixed;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth; /* Smooth scrolling for internal links */
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 50px auto;
             background-color: rgba(255, 255, 255, 0.875);
-            padding: 20px;
+            padding: 30px;
             border: 2px solid #d4a373;
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             text-align: center;
+            opacity: 0; /* Start hidden for fade-in */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
         }
         h1 {
             color: #b85c38;
@@ -29,13 +32,19 @@
             margin-bottom: 20px;
             border-bottom: 3px solid #b85c38;
             display: inline-block;
-            padding: 0 15px;
+            padding: 0 20px;
+            font-family: "KaiTi", serif;
+            transition: transform 0.3s ease; /* Transition for lifting effect */
+        }
+        h1:hover {
+            transform: translateY(-3px); /* Lift effect on hover */
         }
         p {
             font-size: 18px;
             color: #333;
             line-height: 1.8;
             text-align: left;
+            margin-bottom: 20px;
         }
         h2 {
             color: #b85c38;
@@ -43,10 +52,14 @@
             border-bottom: 2px solid #d4a373;
             display: inline-block;
             margin: 20px 0;
+            transition: transform 0.3s ease; /* Transition for lifting effect */
+        }
+        h2:hover {
+            transform: translateY(-3px); /* Lift effect on hover */
         }
         ul, ol {
             text-align: left;
-            margin: 20px;
+            margin: 20px 40px;
             padding-left: 40px;
         }
         ul li, ol li {
@@ -57,16 +70,21 @@
         .images {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 30px;
             margin-bottom: 20px;
         }
         .images img {
             width: 100%; 
-    max-width: 400px; 
-    height: 250px; 
-    object-fit: cover; 
-    border-radius: 10px;
-    border: 3px solid #d4a373;
+            max-width: 400px; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+            border: 3px solid #d4a373;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the effect */
+        }
+        .images img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
         }
         .quote {
             font-size: 20px;
@@ -79,12 +97,12 @@
         }
         table {
             width: 100%;
-            margin-top: 20px;
             border-collapse: collapse;
-            text-align: left;
+            margin-top: 20px;
+            font-size: 18px;
         }
-        th, td {
-            border: 1px solid black;
+        table, th, td {
+            border: 1px solid #b85c38;
             padding: 10px;
         }
         th {
@@ -92,22 +110,56 @@
             color: white;
         }
         td {
-            background-color: #f9f9f9;
+            background-color: rgba(255, 255, 255, 0.9);
         }
-        button {
-            padding: 10px 20px;
+        nav {
+            text-align: center; /* Center the nav button */
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav button {
             background-color: #b85c38;
             color: white;
+            padding: 10px 20px;
+            font-size: 16px;
             border: none;
             border-radius: 5px;
+            margin-top: 20px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Added transform for rotation */
         }
-        button a {
-            color: white;
-            text-decoration: none;
+        nav button:hover {
+            background-color: #d4a373;
+            transform: translateY(-3px); /* Lift effect on hover */
         }
-        button:hover {
-            background-color: #d48160;
+        nav button:active {
+            transform: rotate(3deg); /* Slight rotation on click */
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
