@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: "KaiTi", "STKaiti", serif;
-            background-image: url('https://example.com/ancient-pattern-background.jpg'); 
+            background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg');
             background-size: cover;
             background-attachment: fixed;
             margin: 0;
@@ -16,7 +16,7 @@
         .container {
             width: 80%;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.875);
             padding: 20px;
             border: 2px solid #d4a373;
             border-radius: 15px;
@@ -61,10 +61,12 @@
             margin-bottom: 20px;
         }
         .images img {
-            width: 30%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid #d4a373;
+            width: 100%; 
+    max-width: 400px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    border: 3px solid #d4a373;
         }
         .quote {
             font-size: 20px;
@@ -75,125 +77,107 @@
             border-left: 5px solid #b85c38;
             text-align: left;
         }
-            table, th, td {
-         border:1px solid black;}
-    
-        body{
-        background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg');
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #d4a373;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #b85c38;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+        button:hover {
+            background-color: #d48160;
         }
     </style>
 </head>
 <body>
-    <ol></ol>
     <nav>
         <button><a href="Website Assignment.html">Back</a></button>
     </nav>
-<div class="container">
-    <div class="images">
-        <img src="https://omnivorescookbook.com/wp-content/uploads/2022/05/220510_Mapo-Tofu_550.jpg"></img>
-        <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/08ba3973-23d4-4d12-bb07-ee8cdbf66ea5/Derivates/b01a9b88-6fd3-40ca-bec0-c1d05e314133.jpg"></img>
-        <img src="https://img.taste.com.au/Qgis1Psl/taste/2022/07/mapo-tofu-recipe-180109-2.png"></img>
-    </div>
 
-    <h1>Mapo Tofu</h1>
-    
+    <div class="container">
+        <div class="images">
+            <img src="https://omnivorescookbook.com/wp-content/uploads/2022/05/220510_Mapo-Tofu_550.jpg" alt="Mapo Tofu Image 1">
+            <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/08ba3973-23d4-4d12-bb07-ee8cdbf66ea5/Derivates/b01a9b88-6fd3-40ca-bec0-c1d05e314133.jpg" alt="Mapo Tofu Image 2">
+            <img src="https://img.taste.com.au/Qgis1Psl/taste/2022/07/mapo-tofu-recipe-180109-2.png" alt="Mapo Tofu Image 3">
+        </div>
 
-    <p><strong>Mapo Tofu</strong> is a <em>signature dish of Sichuan cuisine</em>, 
-      renowned for its <i>complex layers of flavor</i> and <i>fiery heat</i>. The dish features soft, 
-      silky tofu submerged in a spicy, savory sauce that bursts with umami. The sauce is typically 
-      made with fermented black beans, chili paste, garlic, and Sichuan peppercorns, which add a 
-      unique numbing sensation to the spice.</p>
-    
-    <p>Traditionally, minced pork is added, giving the dish a <i>hearty texture</i> 
-      and <i>deep flavor</i>. The rich sauce coats each tofu piece perfectly, delivering a 
-      combination of heat, savory richness, and subtle sweetness. Mapo Tofu is a comforting, 
-      flavorful dish that embodies the bold, spicy nature of Sichuan cooking.
-    </p>
+        <h1>Mapo Tofu</h1>
+        <p><strong>Mapo Tofu</strong> is a <em>signature dish of Sichuan cuisine</em>, renowned for its <i>complex layers of flavor</i> and <i>fiery heat</i>. The dish features soft, silky tofu submerged in a spicy, savory sauce that bursts with umami.</p>
 
-    <h1>Ingredients:</h1>
-    <h3>1. Tofu (firm or soft, depending on preference)</h3>
-    <h3>2. Ground pork or beef</h3>
-    <h3>3. Doubanjiang (fermented broad bean and chili paste)</h3>
-    <h3>4. Douchi (fermented black beans)</h3>
-    <h3>5. Garlic (minced)</h3>
-    <h3>6. Ginger (minced)</h3>
-    <h3>7. Green onions (chopped)</h3>
-    <h3>8. Sichuan peppercorns</h3>
-    <h3>9. Soy sauce</h3>
-    <h3>10. Chinese cooking wine</h3>
-    <h3>11. Chicken broth or water</h3>
-    <h3>12. Cornstarch (for thickening)</h3>
-    <h3>13. Sesame oil</h3>
-    <h3>14. Sugar</h3>
-    <h3>15. Chili oil</h3>
+        <p>Traditionally, minced pork is added, giving the dish a <i>hearty texture</i> and <i>deep flavor</i>. The rich sauce coats each tofu piece perfectly, delivering a combination of heat, savory richness, and subtle sweetness.</p>
 
+        <h2>Ingredients:</h2>
+        <ol>
+            <li>Tofu (firm or soft)</li>
+            <li>Ground pork or beef</li>
+            <li>Doubanjiang (fermented broad bean and chili paste)</li>
+            <li>Douchi (fermented black beans)</li>
+            <li>Garlic, minced</li>
+            <li>Ginger, minced</li>
+            <li>Green onions, chopped</li>
+            <li>Sichuan peppercorns</li>
+            <li>Soy sauce</li>
+            <li>Chinese cooking wine</li>
+            <li>Chicken broth or water</li>
+            <li>Cornstarch (for thickening)</li>
+            <li>Sesame oil</li>
+            <li>Sugar</li>
+            <li>Chili oil</li>
+        </ol>
 
-
-      <h1>Here are the steps of how to make Kung Pao Chicken.</h1>
-      <table>
-        <tr>
-          <th>Step</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td><strong>Prepare tofu: </strong>Cut the tofu into 1-inch cubes. Boil water in a pot and gently simmer the tofu for 2-3 minutes. This firms up the tofu and removes excess moisture. Drain and set aside.
-        </td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td><strong>Prepare aromatics: </strong>Mince the garlic and ginger. Finely chop the white part of the green onions, reserving the green parts for garnish.</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td><strong>Heat oil: </strong>In a large pan or wok, heat about 2 tablespoons of vegetable oil over medium heat.
-            </td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td><strong>Cook ground meat: </strong>Add the ground pork (or beef/vegetarian option) and stir-fry until it browns, breaking it up into small pieces. Add Shaoxing wine and cook for another 1-2 minutes until fragrant.
-
-            </td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td><strong>Add aromatics: </strong>Add the minced garlic, ginger, and the white part of the green onions. Stir-fry for about 30 seconds until fragrant.
-            </td>
-        </tr>
-        <tr>
-            <td>6.</td>
-            <td><strong>Add doubanjiang and douchi: </strong>Stir in 1-2 tablespoons of doubanjiang (spicy fermented bean paste) and 1 tablespoon of douchi (fermented black beans). Stir-fry for 1-2 minutes to release the flavors.
-            </td>
-        </tr>
-            <td>7.</td>
-            <td><strong>Season the sauce: </strong>Add 1 tablespoon soy sauce, 1 teaspoon sugar, chili flakes or chili oil (optional for extra heat), and Sichuan peppercorns (ground or whole). Stir everything together.
-            </td>
-        </tr>
-        </tr>
-            <td>8.</td>
-                <td><strong>Add stock: </strong>Pour in about 1 cup of chicken or vegetable stock. Bring the sauce to a boil and simmer for 2-3 minutes to let the flavors meld.
-
-                </td>
-        </tr>
-    </tr>
-    <td>9.</td>
-    <td><strong>Add tofu: </strong>Gently add the tofu cubes into the sauce, being careful not to break them. Let it simmer for another 5-7 minutes so the tofu absorbs the flavors.
-
-    </td>
-</tr>
-</tr>
-<td>10.</td>
-<td><strong>Thicken the sauce: </strong>Mix 1 tablespoon of cornstarch with 2 tablespoons of water to make a slurry. Stir the slurry into the pan and cook for another 1-2 minutes until the sauce thickens.
-
-</td>
-</tr>
-</tr>
-<td>11.</td>
-<td><strong>Add sesame oil: </strong>Finish with a drizzle of sesame oil for extra fragrance.
-</td>
-</tr>
+        <h2>Steps to Make Mapo Tofu</h2>
+        <table>
+            <tr>
+                <th>Step</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Prepare tofu by cutting it into cubes, boiling for a few minutes, and setting aside.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Prepare aromatics by mincing garlic, ginger, and chopping green onions.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Heat oil in a wok and cook ground meat until browned.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Add doubanjiang, douchi, garlic, ginger, and Sichuan peppercorns. Stir-fry until fragrant.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Add soy sauce, stock, and tofu. Simmer for several minutes.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Thicken the sauce with cornstarch slurry and finish with sesame oil.</td>
+            </tr>
         </table>
-</div>
-
+    </div>
 </body>
 </html>

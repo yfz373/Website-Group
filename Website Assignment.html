@@ -3,84 +3,116 @@
 <head>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
+            background-image: url('https://png.pngtree.com/png-clipart/20220120/ourlarge/pngtree-chinese-ancient-style-festive-red-old-calico-background-pattern-png-image_4249981.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
         header {
-            background-color: rgb(133, 84, 84);
-            color: white;
+            background-color: rgba(133, 84, 84, 0.9);
+            color: rgb(255, 255, 255);
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
             position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin: 0;
-            padding: 0.5em 0;
-            color: white;
         }
         header h4, header h3 {
             margin: 0;
-            padding: 0;
+            font-size: 1.2em;
         }
         header img {
-            width: 150px;
+            width: 130px;
             height: auto;
             position: absolute;
             top: 20px;
             left: 20px;
+            border-radius: 50%;
         }
         main {
-            padding: 25px;
-            background-color: white;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.875);
             max-width: 900px;
-            margin: auto;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         .content {
             max-width: 900px;
             margin: auto;
         }
         h1 {
-            color: rgb(133, 84, 84);
+            color: rgb(66, 40, 40);
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #773939;
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #a34646;
+            display: inline-block;
         }
         p {
-            font-size: 20px;
-            line-height: 1.6;
+            font-size: 1.2em;
+            line-height: 1.8;
         }
         ol {
             margin-left: 20px;
+            font-size: 1.1em;
         }
         ol li {
-            font-size: 18px;
-            padding: 5px 0;
+            padding: 8px 0;
+        }
+        nav {
+            margin: 20px 0;
         }
         nav a {
-            color: rgb(133, 84, 84);
-            font-weight: bold;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
+    color: #a34646;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: rgba(133, 84, 84, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1.25em; /* Increased font size */
+}
+nav a:hover {
+    background-color: rgba(133, 84, 84, 0.3);
         }
         footer {
-            background-color: rgb(133, 84, 84);
+            background-color: rgba(133, 84, 84, 0.9);
             color: white;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-radius: 0 0 10px 10px;
         }
-        body {
-  background-image: url('https://png.pngtree.com/png-clipart/20220120/ourlarge/pngtree-chinese-ancient-style-festive-red-old-calico-background-pattern-png-image_4249981.png');
-}
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            main {
+                padding: 20px;
+            }
+            header img {
+                width: 100px;
+            }
+        }
     </style>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>四川园林 (Sichuan Garden)</title>
-    <link rel="icon" type="image/x-icon" href="/mnt/data/file-Mddl9feHISKKKCsEK6ixhJOS">
     <link rel="icon" type="image/x-icon" href="微信图片_20240927151501.jpg">
 </head>
 <body>
@@ -89,7 +121,7 @@
         <img src="微信图片_20240927151501.jpg" alt="Sichuan Garden Logo">
         <h4>FX Sudirman Jl. Jenderal Sudirman No.1 Lantai 2</h4>
         <h3>WA: 083652784524</h3>
-        <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> | 
+        <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> |
         <a href="https://www.facebook.com/FX_sgc/"><strong>FB: FX_SGC</strong></a>
     </header>
 
@@ -105,15 +137,13 @@
             <i>authentic Sichuan cuisine</i>, the restaurant offers a wide range of spicy and 
             flavorful dishes that are sure to excite your taste buds.</p>
 
-       <h2>Popular Dishes</h2>
+        <h2>Popular Dishes</h2>
         <nav>
-            <nav style="font-size: 19px;">  
-
             <a href="kungpao.html">Kung Pao Chicken</a> |
             <a href="mapotofu.html">Authentic Mapo Tofu</a> |
             <a href="noodles.html">Chongqing Noodles</a>
-        </nav> 
-        
+        </nav>
+
         <h2>Main Dishes</h2>
         <ol>
             <li>Kung Pao Chicken (宫保鸡丁)</li>
@@ -125,8 +155,6 @@
             <li>Sichuan Boiled Fish (水煮鱼)</li>
             <li>Dan Dan Noodles (担担面)</li>
         </ol>
-
-        
 
         <h2>Appetizers & Drinks</h2>
         <ol>

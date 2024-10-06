@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KungPao Chicken</title>
+    <title>Kung Pao Chicken</title>
     <style>
         body {
             font-family: "KaiTi", "STKaiti", serif;
             background-size: cover;
             background-attachment: fixed;
+            background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg');
             margin: 0;
             padding: 0;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border: 2px solid #d4a373;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.875);
+            padding: 30px;
+            border: 2px solid #b85c38;
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
         h1 {
@@ -28,13 +29,15 @@
             margin-bottom: 20px;
             border-bottom: 3px solid #b85c38;
             display: inline-block;
-            padding: 0 15px;
+            padding: 0 20px;
+            font-family: "KaiTi", serif;
         }
         p {
             font-size: 18px;
             color: #333;
             line-height: 1.8;
             text-align: left;
+            margin-bottom: 20px;
         }
         h2 {
             color: #b85c38;
@@ -45,7 +48,7 @@
         }
         ul, ol {
             text-align: left;
-            margin: 20px;
+            margin: 20px 40px;
             padding-left: 40px;
         }
         ul li, ol li {
@@ -56,15 +59,17 @@
         .images {
             display: flex;
             justify-content: center;
-            gap: 90px;
+            gap: 30px;
             margin-bottom: 20px;
         }
         .images img {
-            width: 25%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid #d4a373;
-            transform: rotate(90deg);
+            width: 100%; 
+    max-width: 400px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    border: 3px solid #d4a373;
+
         }
         .quote {
             font-size: 20px;
@@ -75,96 +80,111 @@
             border-left: 5px solid #b85c38;
             text-align: left;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 18px;
+        }
         table, th, td {
-         border:1px solid black;}
-            body {
-  background-image: url('https://as2.ftcdn.net/v2/jpg/02/83/34/41/1000_F_283344126_frTNkLuJonnUjTd3BeXDp8pXlzJfkriG.jpg');
-}
-</style>
-<body>
+            border: 1px solid #b85c38;
+            padding: 10px;
+        }
+        th {
+            background-color: #d4a373;
+            color: white;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav button {
+            background-color: #b85c38;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #d4a373;
+        }
     </style>
 </head>
 <body>
-    <ol></ol>
-    <nav>
-        <button><a href="Website Assignment.html">Back</a></button>
-    </nav>
+
+<nav>
+    <button><a href="Website Assignment.html">Back</a></button>
+</nav>
+
 <div class="container">
     <div class="images">
-        <img src="https://www.recipetineats.com/tachyon/2018/09/Kung-Pao-Chicken.jpg"></img>
-        <img src="https://www.chilipeppermadness.com/wp-content/uploads/2021/03/Kung-Pao-Chicken-SQ.jpg"></img>
-        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/07/12/skillet-of-kung-pao-chicken.jpg.rend.hgtvcom.1280.960.suffix/1626142487160.jpeg"></img>
+        <img src="https://www.recipetineats.com/tachyon/2018/09/Kung-Pao-Chicken.jpg" alt="Kung Pao Chicken 1">
+        <img src="https://www.chilipeppermadness.com/wp-content/uploads/2021/03/Kung-Pao-Chicken-SQ.jpg" alt="Kung Pao Chicken 2">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/07/12/skillet-of-kung-pao-chicken.jpg.rend.hgtvcom.1280.960.suffix/1626142487160.jpeg" alt="Kung Pao Chicken 3">
     </div>
 
-    <h1>Kungpao Chicken</h1>
+    <h1>Kung Pao Chicken</h1>
 
+    <p><strong>Kung pao chicken</strong> is a Chinese-style stir-fried dish featuring chicken cubes with dried chili peppers. It's a Sichuanese staple that's also popular globally, with variations adapted to local tastes. The Sichuan version is more complex, using Sichuan peppercorns and a large heap of dried chili peppers for extra spice.</p>
 
-    <p><strong>Kung pao chicken</strong> is Chinese-style stir-fried chicken cubes with dried chili 
-      peppers. It’s a Sichuanese staple that was brought over to America and reinvented for local 
-      flavors and tastes. The Sichuanese version is a tad more complex, seasoned with Chinese 
-      peppercorns and a large heap of dried chili peppers. 
+    <p>This dish is made with chicken, chili peppers, and peanuts. It is flavored with soy sauce, scallions, and cornstarch for a glossy and smooth texture. Kung Pao Chicken is typically served with a side of white rice.</p>
 
-    <p>The building blocks of kung pao chicken are chunks of boneless chicken, chili peppers, 
-      and peanuts. A bit of soy sauce adds a necessary punch of salinity and scallions give it 
-      a nice zing.Corn starch is added to give everything a <i>glossy</i> and <i>smooth texture</i>. 
-      The dish is always served with a side of white rice.</p>
-    <h1>Ingredients:</h1>
-    <h3>1. 2 tablespoons white wine</h3>
-    <h3>2. 2 tablespoons soy sauce</h3>
-    <h3>3. 4 Green Onion, chopped</h3>
-    <h3>4. 1 ounce hot chili paste</h3>
-    <h3>5. 2 teaspoons brown sugar</h3>
-    <h3>6. 1 teaspoon distilled white vinegar</h3>
-    <h3>7. 2 tablespoons cornstarch, dissolved in  tablespoons water</h3>
-    <h3>8. 4 ounces chopped peanuts</h3>
-    <h3>9. 1 tablespoon chopped garlic</h3>
-    <h3>10. 1 pound skinless, boneless chicken breast halves cut into chunks.</h3>
+    <h2>Ingredients</h2>
+    <ol>
+        <li>2 tablespoons white wine</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>4 green onions, chopped</li>
+        <li>1 ounce hot chili paste</li>
+        <li>2 teaspoons brown sugar</li>
+        <li>1 teaspoon distilled white vinegar</li>
+        <li>2 tablespoons cornstarch, dissolved in water</li>
+        <li>4 ounces chopped peanuts</li>
+        <li>1 tablespoon chopped garlic</li>
+        <li>1 pound skinless, boneless chicken breast, cut into chunks</li>
+    </ol>
 
-
-
-      <h1>Here are the steps of how to make Kung Pao Chicken.</h1>
-      <table>
+    <h2>Instructions</h2>
+    <table>
         <tr>
-          <th>Step</th>
-          <th>Description</th>
+            <th>Step</th>
+            <th>Description</th>
         </tr>
         <tr>
-          <td>1.</td>
-          <td>Gather all ingredients</td>
+            <td>1</td>
+            <td>Gather all ingredients.</td>
         </tr>
         <tr>
-          <td>2.</td>
-          <td>Combine water and cornstarch in a cup and set aside.</td>
+            <td>2</td>
+            <td>Combine water and cornstarch in a cup and set aside.</td>
         </tr>
         <tr>
-            <td>3.</td>
-            <td>Combine 1 tablespoon wine, 1 tablespoon soy sauce, 1 table spoon sesame oil,
-                and 1 tablespoon cornstarch/water mixture in a large glass bowl.
-            </td>
+            <td>3</td>
+            <td>In a large bowl, mix 1 tablespoon wine, 1 tablespoon soy sauce, and 1 tablespoon cornstarch/water mixture for marinating the chicken.</td>
         </tr>
         <tr>
-            <td>4.</td>
-            <td>Combine remaining 1 tablespoon wine, 1 tablespoon soy sauce, 1 tablespoon sesame oil,
-                and remaining cornstarch/water mixture in a medium bowl. Whisk in chili paste, brown sugar and vinegar.
-                Add water chestnuts, peanuts, green onions, and garlic and toss to coat.
-            </td>
+            <td>4</td>
+            <td>In a medium bowl, mix the remaining wine, soy sauce, and cornstarch mixture. Add chili paste, brown sugar, vinegar, and peanuts. Stir well.</td>
         </tr>
         <tr>
-            <td>5.</td>
-            <td>Transfer water chestnut mixture to a medium skillet. Heat slowly over medium heat until aromatic.</td>
+            <td>5</td>
+            <td>Heat the peanut mixture in a skillet over medium heat until aromatic.</td>
         </tr>
         <tr>
-            <td>6.</td>
-            <td>Meanwhile, Transfer chicken from marinade into a large skillet; cook over medium-high heat, stirring,
-                until chicken is cooked through and juices run clear.
-            </td>
+            <td>6</td>
+            <td>Cook the marinated chicken in a separate skillet over medium-high heat until fully cooked.</td>
         </tr>
-            <td>7.</td>
-            <td>Combine water chestnut mixture andf sauteed chicken together in one skillet. 
-                Adjust heat and simmer together until sauce thickens.</td>
+        <tr>
+            <td>7</td>
+            <td>Combine the cooked chicken with the peanut mixture and simmer until the sauce thickens.</td>
         </tr>
-        </table>
-
+    </table>
 </div>
 
 </body>
