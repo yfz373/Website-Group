@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -23,7 +24,8 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3rem;
+            order: 1;
             margin: 0;
             transition: text-shadow 0.3s ease; /* Smooth transition for shadow */
         }
@@ -31,8 +33,10 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
         }
         header img {
-            width: 130px;
+            order: 2;
+            width: 100px;
             height: auto;
+            max-width: 20vw; 
             position: absolute;
             top: 20px;
             left: 20px;
@@ -51,18 +55,24 @@
             border-radius: 10px;
             opacity: 0; /* Start hidden for fade-in */
             animation: fadeIn 1s forwards; /* Fade-in animation */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
         }
         .content {
             max-width: 900px;
             margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
         }
         h1 {
             color: rgb(66, 40, 40);
-            font-size: 2.5em;
+            font-size: 2.5rem;
         }
         h2 {
             color: #773939;
-            font-size: 2em;
+            font-size: 2rem;
             margin-bottom: 10px;
             border-bottom: 2px solid #a34646;
             display: inline-block;
@@ -72,12 +82,12 @@
             transform: translateY(-3px); /* Lift effect on hover */
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             line-height: 1.8;
         }
         ol {
             margin-left: 20px;
-            font-size: 1.1em;
+            font-size: 1.1rem;
         }
         ol li {
             padding: 8px 0;
@@ -93,7 +103,7 @@
             background-color: rgba(133, 84, 84, 0.1);
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s, margin-left 0.3s; /* Added margin for slide effect */
-            font-size: 1.25em; /* Increased font size */
+            font-size: 1.25rem; /* Increased font size */
         }
         nav a:hover {
             background-color: rgba(133, 84, 84, 0.3);
@@ -127,7 +137,7 @@
     
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5em;
+                font-size: 2.5rem;
             }
             main {
                 padding: 20px;
@@ -136,17 +146,110 @@
                 width: 100px;
             }
         }
+
+        .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+button, input, select, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 90%; /* Adjust for mobile */
+}
+
+
+        /* For large desktops and laptops */
+@media (min-width: 1200px) {
+    .example {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .example {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 767px) {
+    .example {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav a {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+    header {
+        padding: 1em 0;
+        text-align: center; 
+    }
+    
+    header h1 {
+        font-size: 2rem; 
+        order: 2;
+        margin-top: 10px;
+    }
+    
+    header img {
+        width: 80px; 
+        position: static;
+        order: 1; 
+        margin: 10px auto;
+    }
+
+    
+    header h3, header h4, header a {
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    header h1 {
+        order: 2;
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-top: 10px;
+    }
+    
+    header img {
+        order: 1;
+        width: 80px; /* Adjust size for mobile */
+        margin: 10px auto;
+        position: static;
+    }
+}
     </style>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>四川园林 (Sichuan Garden)</title>
     <link rel="icon" type="image/x-icon" href="微信图片_20240927151501.jpg">
 </head>
 <body>
     <header>
-        <h1>四川园林 (Sichuan Garden)</h1> 
         <img src="微信图片_20240927151501.jpg" alt="Sichuan Garden Logo">
+        <h1>四川园林 (Sichuan Garden)</h1> 
         <h4>FX Sudirman Jl. Jenderal Sudirman No.1 Lantai 2</h4>
         <h3>WA: 083652784524</h3>
         <a href="https://www.instagram.com/FX_sgc/"><strong>IG: FX_SGC</strong></a> |

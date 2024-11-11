@@ -1,0 +1,28 @@
+h1{
+    color: blue;
+    background-color = blue;
+    width = 25%
+}
+
+.description {
+    color: red;
+}
+
+#ingredients{
+    color: green;
+}
+
+
+.box{
+    width : 100px;
+    height : 100px;
+    background-color : red;
+    border: solid 10px green;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
